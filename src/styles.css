@@ -1,1 +1,14 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+    background-color: #021526;
+    color: #E2E2B6;
+    font-family: "Fahkwang", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+}
+
+.container {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+

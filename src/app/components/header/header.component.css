@@ -1,0 +1,99 @@
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.nav h1 {
+    color: #E2E2B6;
+    margin: 0;
+    font-size: 30px;
+    transition: color 0.3s ease;
+}
+
+.nav h1:hover {
+    color: #FF4C4C;
+}
+
+.nav h1 a {
+    color: #E2E2B6;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.nav h1 a:hover {
+    color: #FF4C4C;
+}
+
+.nav h1 a span {
+    color: #FF4C4C;
+    transition: color 0.3s ease;
+}
+
+.nav h1:hover a {
+    color: #FF4C4C; /* Change color of Kwix. */
+}
+
+.nav h1:hover a span {
+    color: #E2E2B6; /* Change color of live */
+}
+
+/* .nav h1 a span:hover {
+    color: #E2E2B6;
+} */
+
+.nav-list {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    margin-left: 100px;
+}
+
+.nav-list li {
+    position: relative;
+    margin-left: 20px;
+    color: #E2E2B6;
+    cursor: pointer;
+    margin-right: 50px;
+    transition: color 0.3s ease;
+    padding-bottom: 5px; 
+}
+
+.nav-list li::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px; /* Thickness of the underline */
+    background: #E2E2B6; /* Color of the underline */
+    transition: width 0.3s ease; /* Smooth transition effect */
+}
+
+.nav-list li:hover::before {
+    width: 100%; /* Full width on hover */
+}
+
+.nav-list li:hover {
+    color: #FF4C4C;
+}
+
+.nav .login-btn {
+    margin-left: auto;
+    background-color: #FF4C4C;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav .login-btn:hover {
+    background-color: #E2E2B6;
+    color: #FF4C4C;
+}

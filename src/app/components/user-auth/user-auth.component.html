@@ -1,0 +1,82 @@
+<div class="login-container">
+  <div *ngIf="showLoginForm" class="login-form">
+    <h2>Login</h2>
+    <p class="message-p"> {{ authError }} </p>
+    <form #lognForm="ngForm" (ngSubmit)="onLoginBtn()">
+      <div class="input-group">
+        <label for="email">Email</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="admin@admin.com"
+          required
+        />
+      </div>
+      <div class="input-group">
+        <label for="password">Password</label>
+        <input
+          type="password"
+          id="password"
+          name="password"
+          placeholder="admin"
+          required
+        />
+      </div>
+      <button type="submit">Login</button>
+      <div class="links">
+        <a href="">Forgot Password?</a>
+        <a (click)="openRegister()">Register?</a>
+      </div>
+    </form>
+  </div>
+  <div *ngIf="!showLoginForm" class="register-form" style="margin-top: 0">
+    <h2>Register Yourself</h2>
+    <form>
+      <div class="input-group">
+        <label for="username">User Name</label>
+        <input
+          type="text"
+          id="username"
+          name="username"
+          placeholder="John Joe"
+          required
+        />
+      </div>
+      <div class="input-group">
+        <label for="email">Email</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="johnjoe@gmail.com"
+          required
+        />
+      </div>
+      <div class="input-group">
+        <label for="mobileno">Mobile No.</label>
+        <input
+          type="text"
+          id="mobileno"
+          name="mobileno"
+          placeholder="123456789"
+          required
+        />
+      </div>
+      <div class="input-group">
+        <label for="password">Password</label>
+        <input
+          type="password"
+          id="password"
+          name="password"
+          placeholder="####"
+          required
+        />
+      </div>
+      <button (click)="onRegisterBtn()" type="submit">Register</button>
+      <div class="links">
+        <a (click)="openLogin()">Already have Account? Login.</a>
+      </div>
+    </form>
+  </div>
+</div>

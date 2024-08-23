@@ -1,0 +1,32 @@
+.text-container {
+    font-size: 32px;
+    color: #E2E2B6;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.typing-animate .dynamic-text {
+    color: #FF4C4C;
+    font-weight: bold;
+    border-right: 2px solid #FF4C4C;
+    white-space: nowrap;
+    overflow: hidden;
+    display: inline-block;
+    vertical-align: bottom;
+    animation: blink-cursor 0.75s step-end infinite;
+}
+
+@keyframes blink-cursor {
+    from, to { border-color: transparent; }
+    50% { border-color: #FF4C4C; }
+}
+
+.text-container h1 {
+    font-size: 50px;
+    margin-top: 10px;
+}
+
+.text-container h5 {
+    margin-top: 10px;
+    font-size: 20px;
+}
