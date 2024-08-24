@@ -1,3 +1,9 @@
+.navbar {
+    position: relative;
+    right: 0;
+    left: 0;
+}
+
 .nav {
     display: flex;
     justify-content: space-between;
