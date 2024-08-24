@@ -2,13 +2,13 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
 }
 
 .nav h1 {
     color: #E2E2B6;
     margin: 0;
     font-size: 30px;
+    margin-bottom: 10px;
     transition: color 0.3s ease;
 }
 

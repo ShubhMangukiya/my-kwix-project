@@ -1,0 +1,59 @@
+/* .heading h1 {
+    font-size: 40pxpx;
+
+}
+
+.heading h1 span{
+    color: #FF4C4C;
+    font-weight: 100;
+    font-style: oblique;
+    font-size: 55px;
+}
+
+.info-paragraph {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    ju
+}
+
+.info-paragraph p {
+    font-size: 21px;
+    margin-right: 10px;
+}
+
+.info-paragraph img {
+    width: 50%;
+    height: 100%;
+} */
+
+.heading h1 {
+    font-size: 40px; /* Corrected the font-size */
+}
+
+.heading h1 span {
+    color: #FF4C4C;
+    font-weight: 100;
+    font-style: oblique;
+    font-size: 55px;
+}
+
+.info-paragraph {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.info-paragraph p {
+    font-size: 21px;
+    margin-right: 20px; /* Added some more space between text and image */
+    max-width: 50%; /* Ensures the paragraph doesn't take more than half the container */
+}
+
+.info-paragraph img {
+    border-radius: 5px;
+    width: 400px; /* Reduced the image width to allow more space for text */
+    height: 200px; /* Maintains the aspect ratio of the image */
+}
