@@ -1,0 +1,28 @@
+ul{
+    margin: 0;
+    padding: 0;
+}
+.footer {
+    padding: 10px;
+    margin-top: 50px;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: #021526;
+}
+.footer ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+}
+.footer ul li a{
+    color: #E2E2B6;
+    text-decoration: none;
+}
+
+.footer p {
+    color: #E2E2B6;
+    font-size: 17px;
+}
