@@ -1,0 +1,108 @@
+.blog-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.hero {
+    display: flex;
+    flex-wrap: wrap;
+    /* Ensures images wrap to the next line if they exceed the width */
+    justify-content: space-between;
+    /* Adds space between images */
+}
+
+.hero-images {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-left: 130px;
+    margin-top: 50px;
+    justify-content: center;
+}
+
+.hero-images img {
+    flex: 1 1 calc(25% - 20px);
+    /* Responsive width, accounting for gaps */
+    max-width: 220px;
+    /* Set a consistent maximum width for all images */
+    height: 250px;
+    /* Set a consistent height for all images */
+    object-fit: cover;
+    /* Ensures images maintain their aspect ratio while filling the space */
+    border-radius: 10px;
+    /* Optional: Rounds the corners of the images */
+    transition: transform 0.3s ease;
+}
+
+.hero-images img:hover {
+    transform: scale(1.05);
+    /* Slightly enlarges the image on hover */
+}
+
+.articles {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.articles h2 {
+    margin-bottom: 40px;
+}
+
+.articles .highlight {
+    color: #ff4c4c;
+}
+
+.article-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* Creates 3 equal-width columns */
+    gap: 20px;
+    /* Space between the items */
+    justify-items: center;
+    /* Centers items in each column */
+}
+
+.article {
+    text-align: center;
+}
+
+.article img {
+    width: 100%;
+    max-width: 220px;
+    /* Set a consistent maximum width for all images */
+    height: 150px;
+    /* Set a consistent height for all images */
+    object-fit: cover;
+    /* Ensures images maintain their aspect ratio while filling the space */
+    border-radius: 10px;
+    /* Optional: Rounds the corners of the images */
+    margin-bottom: 10px;
+    transition: transform 0.3s ease;
+}
+
+.article img:hover {
+    transform: scale(1.05);
+    /* Slightly enlarges the image on hover */
+}
+
+.article h3 {
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.read-more {
+    margin-top: 20px;
+    padding: 10px 30px;
+    background-color: #ff4c4c;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.read-more:hover {
+    background-color: #ffffff;
+    color: #ff4c4c;
+}
