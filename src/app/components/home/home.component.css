@@ -1,8 +1,23 @@
-.text-container {
+/* .text-container {
     font-size: 32px;
-    color: #E2E2B6;
+    color: #FFFFFF;
     margin-top: 50px;
     text-align: center;
+}
+
+
+.text-container h2 {
+    font-weight: 300;
+    font-size: 35px;
+}
+
+.text-container h2 span {
+    color: #FF4C4C;
+}
+
+.text-container p {
+    font-weight: 200;
+    font-size: 20px;
 }
 
 .typing-animate .dynamic-text {
@@ -29,4 +44,111 @@
 .text-container h5 {
     margin-top: 10px;
     font-size: 20px;
+} */
+
+.hero-section {
+    color: white;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.hero-content {
+    text-align: center;
+}
+
+.hero-content h1 {
+    font-weight: 300;
+    font-size: 35px;
+    margin-bottom: 20px;
+    margin-top: -200px;
+}
+
+.hero-content p {
+    font-weight: 200;
+    font-size: 15px;
+}
+
+.highlight {
+    color: #FF4C4C;
+}
+
+
+.hero-section::after {
+    content: '';
+    background-image: url('../../../assets/images/home-background-image.png');
+    /* Add your background image here */
+    background-size: contain;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    opacity: 1;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 50%;
+    width: 100%;
+}
+
+.centered-section {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 40px;
+    margin-top: 100px;
+}
+
+.centered-section h1 {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+
+.connection-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px;
+    background-color: black;
+    color: white;
+}
+
+.content-left {
+    max-width: 50%;
+}
+
+/* .content-section h1 {
+    font-size: 35px;
+    font-weight: 300;
+    margin-bottom: 20px;
+    text-align: center;
+} */
+
+.content-left p {
+    margin-bottom: 10px;
+    font-size: 1.2em;
+}
+
+.demo-link {
+    color: #FF4C4C;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.demo-link:hover {
+    text-decoration: underline;
+}
+
+.content-right {
+    max-width: 40%;
+    text-align: center;
+    position: relative;
+}
+
+.business-card {
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px;
 }

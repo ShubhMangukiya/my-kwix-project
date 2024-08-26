@@ -4,14 +4,13 @@ ul{
 }
 .footer {
     padding: 10px;
-    margin-top: 50px;
+    margin-top: 100px;
     margin-bottom: 0;
     text-align: center;
     position: relative;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    background-color: #021526;
+    margin-left: 200px;
+    margin-right: 200px;
+    background-color: black;
 }
 .footer ul{
     list-style-type: none;
@@ -19,11 +18,11 @@ ul{
     justify-content: space-between;
 }
 .footer ul li a{
-    color: #E2E2B6;
+    color: #FFFFFF;
     text-decoration: none;
 }
 
 .footer p {
-    color: #E2E2B6;
+    color: #FFFFFF;
     font-size: 17px;
 }
