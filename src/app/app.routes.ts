@@ -2,9 +2,10 @@ import { Routes } from '@angular/router';
 import { UserAuthComponent } from './components/user-auth/user-auth.component';
 import { HomeComponent } from './components/home/home.component';
 import { UsComponent } from './components/us/us.component';
-import { SupportPageComponent } from './components/support-page/support-page.component';
 import { WhatWeDoPageComponent } from './components/what-we-do-page/what-we-do-page.component';
 import { BlogsComponent } from './components/blogs/blogs.component';
+import { ContactUsComponent } from './components/contact-us/contact-us.component';
+import { ServicesComponent } from './components/services/services.component';
 
 export const routes: Routes = [
     {
@@ -20,8 +21,8 @@ export const routes: Routes = [
         component: BlogsComponent
     },
     {
-        path: 'support',
-        component: SupportPageComponent
+        path: 'services',
+        component: ServicesComponent
     },
     {
         path: 'what-we-do',
@@ -30,5 +31,9 @@ export const routes: Routes = [
     {
         path: 'us',
         component: UsComponent
+    },
+    {
+        path: 'contact-us',
+        component: ContactUsComponent
     }
 ];
