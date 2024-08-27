@@ -40,7 +40,7 @@ h1 {
     padding-bottom: 5px;
 }
 
-.service-nav-list  li::before {
+.service-nav-list li::before {
     content: '';
     position: absolute;
     bottom: 0;
@@ -54,12 +54,26 @@ h1 {
     /* Smooth transition effect */
 }
 
-.service-nav-list  li:hover::before {
+.service-nav-list li:hover::before {
     width: 100%;
     /* Full width on hover */
 }
 
-.service-nav-list  li:hover {
+.service-nav-list li:hover {
     color: #FF4C4C;
 }
 
+.additional-content {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+}
+
+.service-nav-list li {
+    cursor: pointer;
+}
+
+.service-nav-list li:hover {
+    text-decoration: underline;
+}
