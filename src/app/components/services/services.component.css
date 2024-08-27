@@ -64,12 +64,34 @@ h1 {
 }
 
 .additional-content {
+    align-items: center;
+    text-align: left;
     margin-top: 20px;
     padding: 10px;
+    border-radius: 5px;
+}
+
+
+
+.link-in-bio {
+    display: flex;
+    justify-content: space-between;
+}
+
+.link-in-bio .image-left img {
+    height: auto;
+    width: 100%;
+    max-width: 300px;
+    border-radius: 5px;
+}
+
+.link-in-bio .image-right img {
+    height: 650px;
+    width: 100%;
+    max-width: 770px;
     border-radius: 5px;
 }
 
 .service-nav-list li {
     cursor: pointer;
 }
-
