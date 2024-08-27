@@ -1,7 +1,8 @@
-ul{
+ul {
     margin: 0;
     padding: 0;
 }
+
 .footer {
     padding: 10px;
     margin-top: 100px;
@@ -12,14 +13,42 @@ ul{
     margin-right: 200px;
     background-color: black;
 }
-.footer ul{
+
+.footer ul {
     list-style-type: none;
     display: flex;
     justify-content: space-between;
 }
-.footer ul li a{
+
+.footer ul li {
+    position: relative;
+    cursor: pointer;
+    padding-bottom: 5px;
+}
+
+.footer ul li::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #FFFFFF;
+    transition: width 0.3s ease;
+}
+
+.footer ul li:hover::before {
+    width: 100%;
+}
+
+.footer ul li a:hover {
+    color: #FF4C4C;
+}
+
+.footer ul li a {
     color: #FFFFFF;
     text-decoration: none;
+    transition: color 0.3s ease;
 }
 
 .footer p {
