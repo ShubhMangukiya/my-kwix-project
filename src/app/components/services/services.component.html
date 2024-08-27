@@ -1,1 +1,30 @@
-<p>services works!</p>
+<div class="container">
+  <h1>Services</h1>
+  <nav class="service-navbar">
+    <div class="service-nav">
+      <ul class="service-nav-list">
+        <li (click)="showContent('linkInBio')">Link in Bio</li>
+        <li (click)="showContent('businessCard')">Business Card</li>
+        <li (click)="showContent('cloudbaseCRM')">Cloudbase CRM</li>
+        <li (click)="showContent('cloudbaseCMS')">Cloudbase CMS</li>
+      </ul>
+    </div>
+  </nav>
+
+  <div *ngIf="activeSection === 'linkInBio'" class="additional-content">
+    <h2>Link in Bio Details</h2>
+    <p>This is the content for Link in Bio.</p>
+  </div>
+  <div *ngIf="activeSection === 'businessCard'" class="additional-content">
+    <h2>Business Card Details</h2>
+    <p>This is the content for Business Card.</p>
+  </div>
+  <div *ngIf="activeSection === 'cloudbaseCRM'" class="additional-content">
+    <h2>Cloudbase CRM Details</h2>
+    <p>This is the content for Cloudbase CRM.</p>
+  </div>
+  <div *ngIf="activeSection === 'cloudbaseCMS'" class="additional-content">
+    <h2>Cloudbase CMS Details</h2>
+    <p>This is the content for Cloudbase CMS.</p>
+  </div>
+</div>

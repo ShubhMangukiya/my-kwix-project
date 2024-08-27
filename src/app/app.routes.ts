@@ -6,6 +6,7 @@ import { WhatWeDoPageComponent } from './components/what-we-do-page/what-we-do-p
 import { BlogsComponent } from './components/blogs/blogs.component';
 import { ContactUsComponent } from './components/contact-us/contact-us.component';
 import { ServicesComponent } from './components/services/services.component';
+import { LinkInBioComponent } from './components/link-in-bio/link-in-bio.component';
 
 export const routes: Routes = [
     {
@@ -35,5 +36,9 @@ export const routes: Routes = [
     {
         path: 'contact-us',
         component: ContactUsComponent
+    },
+    {
+        path: 'link-in-bio',
+        component: LinkInBioComponent
     }
 ];
