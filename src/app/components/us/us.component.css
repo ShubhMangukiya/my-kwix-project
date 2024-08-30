@@ -33,6 +33,13 @@
     /* Corrected the font-size */
 }
 
+.heading h1 span {
+    color: #FF4C4C;
+    font-weight: 100;
+    font-style: oblique;
+    font-size: 55px;
+}
+
 .info-paragraph {
     margin-top: 50px;
     display: flex;
@@ -99,9 +106,7 @@
     color: #FF4C4C;
 }
  
-.member-info h2 span{
-    color: #021526;
-}
+
 .member-info p{
     color: #021526;
 }
