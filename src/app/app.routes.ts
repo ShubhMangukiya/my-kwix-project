@@ -12,22 +12,22 @@ export const routes: Routes = [
     {
         path: '',
         component: HomeComponent,
-        title: 'Kwix.Home'
+        title: 'Kwix >> Home'
     },
     {
         path: 'user-auth',
         component: UserAuthComponent,
-        title: 'Kwix.User.Login'
+        title: 'Kwix >> User >> Login'
     },
     {
         path: 'blogs',
         component: BlogsComponent,
-        title: 'Kwix.Blog'
+        title: 'Kwix >> Blog'
     },
     {
         path: 'services',
         component: ServicesComponent,
-        title: 'Kwix.Services'
+        title: 'Kwix >> Services'
     },
     {
         path: 'what-we-do',
@@ -36,11 +36,11 @@ export const routes: Routes = [
     {
         path: 'us',
         component: UsComponent,
-        title: 'Kwix.Aboutus'
+        title: 'Kwix >> Aboutus'
     },
     {
         path: 'contact-us',
         component: ContactUsComponent,
-        title: 'Kwix.Contactus'
+        title: 'Kwix >> Contactus'
     }
 ];
