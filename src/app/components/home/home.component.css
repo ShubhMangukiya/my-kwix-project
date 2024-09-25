@@ -135,10 +135,30 @@
     color: #FF4C4C;
     text-decoration: none;
     font-weight: bold;
+    transition: color 0.3s ease;
+    padding-bottom: 5px;
+}
+
+.demo-link::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100px;
+    height: 2px;
+    /* Thickness of the underline */
+    background: #FFFFFF;
+    /* Color of the underline */
+    transition: width 0.3s ease;
+    /* Smooth transition effect */
+}
+
+.demo-link:hover::before {
+    width: 100%;
 }
 
 .demo-link:hover {
-    text-decoration: underline;
+    color: white;
 }
 
 .content-right {

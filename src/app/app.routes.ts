@@ -11,19 +11,23 @@ import { LinkInBioComponent } from './components/link-in-bio/link-in-bio.compone
 export const routes: Routes = [
     {
         path: '',
-        component: HomeComponent
+        component: HomeComponent,
+        title: 'Kwix.Home'
     },
     {
         path: 'user-auth',
-        component: UserAuthComponent
+        component: UserAuthComponent,
+        title: 'Kwix.User.Login'
     },
     {
         path: 'blogs',
-        component: BlogsComponent
+        component: BlogsComponent,
+        title: 'Kwix.Blog'
     },
     {
         path: 'services',
-        component: ServicesComponent
+        component: ServicesComponent,
+        title: 'Kwix.Services'
     },
     {
         path: 'what-we-do',
@@ -31,14 +35,12 @@ export const routes: Routes = [
     },
     {
         path: 'us',
-        component: UsComponent
+        component: UsComponent,
+        title: 'Kwix.Aboutus'
     },
     {
         path: 'contact-us',
-        component: ContactUsComponent
-    },
-    {
-        path: 'link-in-bio',
-        component: LinkInBioComponent
+        component: ContactUsComponent,
+        title: 'Kwix.Contactus'
     }
 ];
